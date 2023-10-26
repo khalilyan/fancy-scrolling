@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fancy-scrolling/static/css/main.e5267b93.css",
-    "main.js": "/fancy-scrolling/static/js/main.15749044.js",
+    "main.css": "/fancy-scrolling/static/css/main.e6fb4bd1.css",
+    "main.js": "/fancy-scrolling/static/js/main.053dcae2.js",
     "static/media/frame0936.png": "/fancy-scrolling/static/media/frame0936.3d8b2f6c2bc7964078e6.png",
     "static/media/frame0937.png": "/fancy-scrolling/static/media/frame0937.3d8b2f6c2bc7964078e6.png",
     "static/media/frame0934.png": "/fancy-scrolling/static/media/frame0934.5d3c9ecdadf75d1a29dd.png",
@@ -296,11 +296,11 @@
     "static/media/frame0081.png": "/fancy-scrolling/static/media/frame0081.c29f274dc577a5e156c5.png",
     "static/media/Fighting Spirit 2.otf": "/fancy-scrolling/static/media/Fighting Spirit 2.b52ccb14389810d09526.otf",
     "index.html": "/fancy-scrolling/index.html",
-    "main.e5267b93.css.map": "/fancy-scrolling/static/css/main.e5267b93.css.map",
-    "main.15749044.js.map": "/fancy-scrolling/static/js/main.15749044.js.map"
+    "main.e6fb4bd1.css.map": "/fancy-scrolling/static/css/main.e6fb4bd1.css.map",
+    "main.053dcae2.js.map": "/fancy-scrolling/static/js/main.053dcae2.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5267b93.css",
-    "static/js/main.15749044.js"
+    "static/css/main.e6fb4bd1.css",
+    "static/js/main.053dcae2.js"
   ]
 }
