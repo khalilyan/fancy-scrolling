@@ -6,14 +6,17 @@ import { OrbitControls } from '@react-three/drei';
 import { Model } from './components/Model/Mode3D';
 import { Suspense } from 'react';
 import { useState } from 'react';
+import { Garage } from './components/Model/Garage';
 
 function App() {
   const [view, setView] = useState(false);
   const handleView = () =>{
     setView(true)
   }
-  window.addEventListener('keydown',()=>{
-    setView(false)
+  window.addEventListener('keydown',(e)=>{
+    if(e.keyCode===27){
+      setView(false)
+    }
   })
   return (
     <div className="App">
@@ -36,23 +39,32 @@ function App() {
       <section id='5' className='section5'>
         
         <label>{view===false ? 'Click to view' : 'Press Esc to exit view' }</label>
-       <Canvas onClick={handleView}  camera={{position: [1.1,1.1,3]}} >
+       <Canvas onClick={handleView} camera={{position: [-2.4,0.6,2.3]}} >
       
        {view && <OrbitControls/>}
 
-        <color attach={'background'} args={['#030303']}  />
-        <hemisphereLight intensity={1}/>
-        <directionalLight color={'white'} position={[15, 50, 20]} castShadow shadow-mapSize={1024} />
-        <directionalLight color={'silver'} position={[0, 50, 4.3]} castShadow shadow-mapSize={1024} />
+        <color attach={'background'} args={['black']}  />
         <spotLight
-          position={[0,10,10]}
-          angle={1.3}
-          penumbra={2}
-          intensity={5}
+          position={[1.480,8.607,0.281]}
+          angle={0.2}
+          
+          penumbra={1}
+          intensity={1}
           castShadow
         />
+
+        {/* <ambientLight color={'white'} /> */}
+        <directionalLight position={[-0.5,3.2,2.5]} lookAt={[0,1,0]} color={'white'}/>
+        <directionalLight position={[-1,3.2,-2.5]}  lookAt={[0,1,0]} color={'white'}/>
+
+        <directionalLight position={[1.5,3.2,2.5]} lookAt={[0,1,0]} color={'white'}/>
+        <directionalLight position={[1,3.2,-2.5]}  lookAt={[0,1,0]} color={'white'}/>
+
+        
+        
         <Suspense fallback={null}>
           <Model/>
+          <Garage/>
         </Suspense>
        </Canvas>
       </section>
