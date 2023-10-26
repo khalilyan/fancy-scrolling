@@ -1,7 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Fancy-Scrolling.css'
+import Loading from '../Loading/Loading';
 
 const FancyScrolling = ({frameLength,frameStart,sectionNum}) => {
+  const [isLoading, setIsLoading] = useState(true);
   const html = document.documentElement;
   const canvasRef = useRef(null);
   const contextRef = useRef(null);
@@ -11,11 +13,20 @@ const FancyScrolling = ({frameLength,frameStart,sectionNum}) => {
   });
 
   const preloadImages = () => {
-    for (const url of frameUrls) {
-      const img = new Image();
-      img.src = url;
-    }
+    const imagePromises = frameUrls.map((url) => {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.src = url;
+        img.onload = () => resolve();
+      });
+    });
+  
+    return Promise.all(imagePromises);
   };
+
+  preloadImages().then(() => {
+    setIsLoading(false);
+  });
 
   useEffect(() => {
     const ParEl = document.getElementById(`${sectionNum}`);
@@ -83,9 +94,12 @@ const FancyScrolling = ({frameLength,frameStart,sectionNum}) => {
   }, [frameUrls]);
 
 
-  return <div className='fancy-Container'>
-    <canvas ref={canvasRef} id={`canvas-${sectionNum}`} />
-  </div>;
+  return (
+    <div className='fancy-Container'>
+      {isLoading && <Loading />}
+          <canvas ref={canvasRef} id={`canvas-${sectionNum}`} />
+    </div>
+  )
 };
 
 export default FancyScrolling;
