@@ -15,14 +15,14 @@
 .loadingContain svg{
     stroke: white;
     stroke-width: 0.09; 
-    animation: textAniamte infinite 1.5s;  
+    animation: logoAniamte infinite 1.5s;  
     /* animation-direction: alternate; */
     background: transparent;
 }
 
 
 
-@keyframes textAniamte {
+@keyframes logoAniamte {
     0%{
         opacity: 0;
         stroke-dasharray: 0 50%;

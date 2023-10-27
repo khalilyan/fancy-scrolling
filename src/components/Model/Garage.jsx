@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Garage(props) {
-  const { nodes, materials } = useGLTF('fancy-scrolling/models/garage/scene.gltf')
+  const { nodes, materials } = useGLTF('public/models/garage/scene.gltf')
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.027}>
@@ -14,4 +14,4 @@ export function Garage(props) {
   )
 }
 
-useGLTF.preload('fancy-scrolling/models/garage/scene.gltf')
+useGLTF.preload('public/models/garage/scene.gltf')
