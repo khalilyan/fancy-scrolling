@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fancy-scrolling/static/css/main.e6fb4bd1.css",
-    "main.js": "/fancy-scrolling/static/js/main.053dcae2.js",
+    "main.js": "/fancy-scrolling/static/js/main.6959092a.js",
     "static/media/frame0936.png": "/fancy-scrolling/static/media/frame0936.3d8b2f6c2bc7964078e6.png",
     "static/media/frame0937.png": "/fancy-scrolling/static/media/frame0937.3d8b2f6c2bc7964078e6.png",
     "static/media/frame0934.png": "/fancy-scrolling/static/media/frame0934.5d3c9ecdadf75d1a29dd.png",
@@ -297,10 +297,10 @@
     "static/media/Fighting Spirit 2.otf": "/fancy-scrolling/static/media/Fighting Spirit 2.b52ccb14389810d09526.otf",
     "index.html": "/fancy-scrolling/index.html",
     "main.e6fb4bd1.css.map": "/fancy-scrolling/static/css/main.e6fb4bd1.css.map",
-    "main.053dcae2.js.map": "/fancy-scrolling/static/js/main.053dcae2.js.map"
+    "main.6959092a.js.map": "/fancy-scrolling/static/js/main.6959092a.js.map"
   },
   "entrypoints": [
     "static/css/main.e6fb4bd1.css",
-    "static/js/main.053dcae2.js"
+    "static/js/main.6959092a.js"
   ]
 }
