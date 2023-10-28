@@ -36,7 +36,7 @@ function App() {
         <FancyScrolling frameLength={149} sectionNum={4} frameStart={876}/>
       </section>
 
-      {/* <section id='5' className='section5'>
+      <section id='5' className='section5'>
         
         <label>{view===false ? 'Click to view' : 'Press Esc to exit view' }</label>
        <Canvas onClick={handleView} camera={{position: [-2.4,0.6,2.3]}} >
@@ -67,7 +67,7 @@ function App() {
           <Garage/>
         </Suspense>
        </Canvas>
-      </section> */}
+      </section>
 
     </div>
   );
