@@ -11,7 +11,6 @@ const FancyScrolling = ({frameLength,frameStart,sectionNum}) => {
   const frameUrls = Array.from({ length: frameLength }, (_, i) => {
     return require(`./frames/frame${(i+frameStart).toString().padStart(4, '0')}.png`);
   });
-
   const preloadImages = () => {
     const imagePromises = frameUrls.map((url) => {
       return new Promise((resolve) => {

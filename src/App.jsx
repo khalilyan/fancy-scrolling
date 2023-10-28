@@ -36,7 +36,7 @@ function App() {
         <FancyScrolling frameLength={149} sectionNum={4} frameStart={876}/>
       </section>
 
-      <section id='5' className='section5'>
+      {/* <section id='5' className='section5'>
         
         <label>{view===false ? 'Click to view' : 'Press Esc to exit view' }</label>
        <Canvas onClick={handleView} camera={{position: [-2.4,0.6,2.3]}} >
@@ -53,7 +53,7 @@ function App() {
           castShadow
         />
 
-        {/* <ambientLight color={'white'} /> */}
+    
         <directionalLight position={[-0.5,3.2,2.5]} lookAt={[0,1,0]} color={'white'}/>
         <directionalLight position={[-1,3.2,-2.5]}  lookAt={[0,1,0]} color={'white'}/>
 
@@ -67,7 +67,7 @@ function App() {
           <Garage/>
         </Suspense>
        </Canvas>
-      </section>
+      </section> */}
 
     </div>
   );
