@@ -35,8 +35,8 @@ const FancyScrolling = ({frameLength,frameStart,sectionNum}) => {
     
     const img = new Image();
     img.src = frameUrls[0]; //
-    canvas.width = 3840;
-    canvas.height = 1630;
+    canvas.width = 1440;
+    canvas.height = 745;
 
     img.onload = function () {
       context.drawImage(img, 0, 0);
@@ -76,7 +76,7 @@ const FancyScrolling = ({frameLength,frameStart,sectionNum}) => {
 
     } else {
       canvas.style.position = 'relative'
-      canvas.style.height = `${ParEl.offsetHeight-700}px`
+      canvas.style.height = `${ParEl.offsetHeight}px`
     }
         
 };
